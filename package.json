@@ -1,7 +1,7 @@
 {
   "name": "niftex-uni-sdk",
   "license": "MIT",
-  "version": "3.0.3",
+  "version": "3.0.3-alpha.1",
   "description": "Uniswap SDK with edited constants for NIFTEX",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
