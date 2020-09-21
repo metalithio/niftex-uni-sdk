@@ -22,7 +22,11 @@ export enum Rounding {
   ROUND_UP
 }
 
-export const FACTORY_ADDRESS = '0x4B9e7266B80B28C63388Ca18deB0eDA871D62b89'
+export const FACTORY_ADDRESS = process.env.REACT_APP_CHAIN_ID && (parseInt(process.env.REACT_APP_CHAIN_ID) === 137
+	? '0xf9773E320F09F1Cf33aA808Aaf744a330ff0e279'
+	: parseInt(process.env.REACT_APP_CHAIN_ID) === 80001
+	? '0x4B9e7266B80B28C63388Ca18deB0eDA871D62b89'
+	: '')
 
 export const INIT_CODE_HASH = '0xea7730b2f46009d7dd5294ae203f2f6f4fbc489113280b65c18e1fe3b88d8186'
 
